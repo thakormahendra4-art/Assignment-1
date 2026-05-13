@@ -55,7 +55,8 @@ nav .cart {
 .container {
   height: 92%;
   width: 100%;
-  display: flex;
+  /* display: flex; */
+  position: relative;
 }
 
 /* box1 all css  */
@@ -67,6 +68,7 @@ nav .cart {
   justify-content: space-between;
   gap: 20px;
   padding-bottom: 20px;
+  position: absolute;
 }
 .container .box1 .texts {
   display: flex;
@@ -122,20 +124,19 @@ nav .cart {
   gap: 20px;
 }
 
-.leaf2{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   gap: 12px;
+.leaf2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
 }
 
-.leaf-line{
+.leaf-line {
   height: 0px;
   width: 50px;
   border: 1px dotted black;
   transform: rotate(90deg);
 }
-
 
 .container .box2 {
   height: 100%;
@@ -145,7 +146,9 @@ nav .cart {
 .container .box3 {
   height: 100%;
   width: 20%;
-  padding-top: 27px;
+  padding-top: 54px;
+  position: absolute;
+  right: 120px;
 }
 
 /* box2 all css */
@@ -155,12 +158,13 @@ nav .cart {
   flex-direction: column;
   justify-content: space-between;
   padding: 27px 10px 40px 10px;
+  position: absolute;
+  left: 540px;
 }
 
 .image {
   display: flex;
   justify-content: space-between;
- 
 }
 
 .vertical-text {
@@ -186,14 +190,14 @@ nav .cart {
   background-position: center;
 }
 
-.img-big .pr-box{
+.img-big .pr-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 10px 10px 10px;
 }
 
-.price-box{
+.price-box {
   height: 35px;
   width: 45px;
   background-color: white;
@@ -204,9 +208,9 @@ nav .cart {
   box-shadow: 0px 4px 10px gray;
 }
 
-.rating-box{
+.rating-box {
   height: 35px;
-  width:120px;
+  width: 120px;
   background-color: white;
   display: flex;
   gap: 10px;
@@ -216,7 +220,7 @@ nav .cart {
   box-shadow: 0px 4px 10px gray;
 }
 
-.cart-box{
+.cart-box {
   background-color: #5f654e;
   height: 120px;
   width: 120px;
@@ -225,15 +229,13 @@ nav .cart {
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom:20px;
+  bottom: 20px;
   left: 340px;
   color: white;
   border-radius: 50%;
   font-weight: 200;
   gap: 10px;
-
 }
-
 
 .container .box2 .text3 {
   display: flex;
